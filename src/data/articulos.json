@@ -1,0 +1,121 @@
+{
+  "marcas": [
+    { "id": "hikvision", "nombre": "Hikvision" }
+  ],
+  "nvrs": [
+    {
+      "id": "ds-7616ni-q2",
+      "marca": "hikvision",
+      "modelo": "16-ch 1U 4K NVR",
+      "canales": 16,
+      "precio": 155.00
+    },
+    {
+      "id": "ds-7616ni-q2-16p",
+      "marca": "hikvision",
+      "modelo": "16-ch PoE 1U 4K NVR",
+      "canales": 16,
+      "poe": true,
+      "precio": 332.00
+    },
+    {
+      "id": "ds-7608ni-q1-d",
+      "marca": "hikvision",
+      "modelo": "8-ch 1U 4K NVR Hikvision",
+      "canales": 8,
+      "precio": 114.50
+    },
+    {
+      "id": "ds-7104ni-q1-m-c",
+      "marca": "hikvision",
+      "modelo": "4-ch mini 1U NVR Hikvision",
+      "canales": 4,
+      "precio": 75.00
+    }
+  ],
+  "switches": [
+    {
+      "id": "ds-3e1309p-ei-m",
+      "marca": "hikvision",
+      "modelo": "8 Poe 100mb+1Gb Smart Switch Hikvision",
+      "puertos_poe": 8,
+      "puertos_total": 9,
+      "precio": 79.00
+    },
+    {
+      "id": "ds-3e1105p-ei",
+      "marca": "hikvision",
+      "modelo": "4+1 Port 100mb Smart POE Switch Hikvision",
+      "puertos_poe": 4,
+      "puertos_total": 5,
+      "precio": 60.00
+    }
+  ],
+  "camaras": [
+    {
+      "id": "ds-2cd1021g0-i-0280",
+      "marca": "hikvision",
+      "modelo": "2 MP Fixed Bullet Network Camera",
+      "tipo": "bullet",
+      "resolucion": "2 MP",
+      "precio": 28.00
+    },
+    {
+      "id": "ds-2cd1321g0-i-0280",
+      "marca": "hikvision",
+      "modelo": "2 MP Fixed Turret Network Camera",
+      "tipo": "turret",
+      "resolucion": "2 MP",
+      "precio": 29.00
+    },
+    {
+      "id": "ds-2cd1623g2-iz-2812",
+      "marca": "hikvision",
+      "modelo": "2 MP MD 2.0 Varifocal Bullet IPC Hikvision",
+      "tipo": "bullet",
+      "resolucion": "2 MP",
+      "varifocal": true,
+      "precio": 109.00
+    },
+    {
+      "id": "ds-2cd1023g2-iuf-0280",
+      "marca": "hikvision",
+      "modelo": "2 MP MD 2.0 Fixed Bullet IPC Hikvision",
+      "tipo": "bullet",
+      "resolucion": "2 MP",
+      "precio": 55.00
+    },
+    {
+      "id": "ds-2cd1327g2-l-0280",
+      "marca": "hikvision",
+      "modelo": "2 MP ColorVu MD 2.0 Turret IPC Hikvision",
+      "tipo": "turret",
+      "resolucion": "2 MP",
+      "colorvu": true,
+      "precio": 75.00
+    },
+    {
+      "id": "ds-2cd1027g2h-liu-0280",
+      "marca": "hikvision",
+      "modelo": "2 MP ColorVu Dual Light 2.8mm Bullet Hikvisio",
+      "tipo": "bullet",
+      "resolucion": "2 MP",
+      "colorvu": true,
+      "dual_light": true,
+      "precio": 69.90
+    },
+    {
+      "id": "ds-2cd1327g2h-liu-0280-duplicado",
+      "marca": "hikvision",
+      "modelo": "2 MP Hybrid Light Turret IPC Hikvision",
+      "tipo": "turret",
+      "resolucion": "2 MP",
+      "hybrid_light": true,
+      "precio": 68.20
+    }
+  ],
+  "discos": [
+    { "id": "hdd1tb", "tipo": "HDD", "capacidad": "1TB", "precio": 70.00 },
+    { "id": "hdd2tb", "tipo": "HDD", "capacidad": "2TB", "precio": 90.00 }
+  ]
+}
