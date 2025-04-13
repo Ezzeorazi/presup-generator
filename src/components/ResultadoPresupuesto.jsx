@@ -34,9 +34,11 @@ function ResultadoPresupuesto({ resultado, onGenerarPDF }) {
               <strong>Disco:</strong> {resultado.disco.tipo} {resultado.disco.capacidad} - Precio: ${resultado.disco.precio.toFixed(2)}
             </li>
           )}
-          <li className="list-group-item">
-            <strong>Mano de Obra:</strong> ${resultado.manoDeObra.toFixed(2)}
-          </li>
+          {resultado.manoDeObra > 0 && (
+            <li className="list-group-item">
+              <strong>Mano de Obra:</strong> ${resultado.manoDeObra.toFixed(2)}
+            </li>
+          )}
           <li className="list-group-item active">
             <strong>Presupuesto Total:</strong> ${resultado.total.toFixed(2)}
           </li>

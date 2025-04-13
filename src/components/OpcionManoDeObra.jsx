@@ -8,7 +8,7 @@ function OpcionManoDeObra({ onSiguiente, onAnterior, datosPrevios, setDatosPresu
     setDatosPresupuesto((prevDatos) => ({
       ...prevDatos,
       incluirManoDeObra: incluirManoDeObra,
-      manoDeObra: incluirManoDeObra ? 100 : 0,
+      manoDeObra: incluirManoDeObra ? 100 : 0, // Solo incluir el costo si está seleccionado
     }));
   }, [incluirManoDeObra, setDatosPresupuesto]);
 

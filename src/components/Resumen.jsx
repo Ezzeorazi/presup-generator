@@ -1,6 +1,4 @@
-import React from 'react';
-
-function Resumen({ datos }) {
+function Resumen({ datos, pasoActual }) {
   return (
     <div className="mt-4">
       <h3>Resumen del Presupuesto</h3>
@@ -37,9 +35,11 @@ function Resumen({ datos }) {
             <strong>Disco Seleccionado:</strong> {datos.disco.tipo} {datos.disco.capacidad} - Precio: ${datos.disco.precio.toFixed(2)}
           </li>
         )}
-        <li className="list-group-item">
-          <strong>Mano de Obra:</strong> {datos.incluirManoDeObra ? `$${datos.manoDeObra.toFixed(2)}` : 'No incluida'}
-        </li>
+        {pasoActual >= 6 && (
+          <li className="list-group-item">
+            <strong>Mano de Obra:</strong> {datos.incluirManoDeObra ? `$${datos.manoDeObra.toFixed(2)}` : 'No incluida'}
+          </li>
+        )}
       </ul>
     </div>
   );
