@@ -5,46 +5,18 @@ html, body {
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
 
-/* Navbar fijo en la parte superior */
-.navbar {
-  flex-shrink: 0; /* Evita que el Navbar cambie de tamaño */
-  position: sticky; /* Hace que el Navbar permanezca visible */
-  top: 0;
-  z-index: 1000; /* Asegura que el Navbar esté por encima del contenido */
+/* Opcional: Ajustes mínimos */
+.card {
+  border-radius: 10px;
 }
 
-/* Footer fijo en la parte inferior */
-footer {
-  flex-shrink: 0; /* Evita que el Footer cambie de tamaño */
-  position: sticky; /* Hace que el Footer permanezca visible */
-  bottom: 0;
-  z-index: 1000; /* Asegura que el Footer esté por encima del contenido */
+.list-group-item {
+  cursor: pointer;
 }
 
-/* El contenido principal ocupa el espacio restante */
-.main-content {
-  flex-grow: 1; /* Permite que el contenido principal ocupe el espacio restante */
-  overflow-y: auto; /* Habilita el desplazamiento si el contenido es demasiado grande */
-  background-color: #f8f9fa; /* Fondo claro para el contenido */
-  padding: 20px; /* Espaciado interno */
-}
-
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-  .navbar {
-    background-color: #343a40; /* Fondo oscuro para el Navbar en mobile */
-  }
-
-  footer {
-    background-color: #343a40; /* Fondo oscuro para el Footer en mobile */
-  }
-
-  .main-content {
-    padding: 10px; /* Menos espaciado interno en mobile */
-  }
+.list-group-item:hover {
+  background-color: #f8f9fa;
 }
